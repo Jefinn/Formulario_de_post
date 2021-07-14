@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+<script data-ad-client="ca-pub-4730486873875128" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Espaco dos Autores">
+    <meta name="keywords" content="autores,obras,obras nacionais,espaco dos autores,poesias, mangas, charge, textos">
+
+    <title>Espaço dos Autores</title>
+    <link rel="shortcut icon" href="ico/logonavegadorsemfundo.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css external file  -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container">
+                <img  class="ico2" src="ico/logobranco.png" alt="espaço_dos_autores">
+                <a class="navbar-brand" href="index.html">Espaço dos Autores</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="sobre.html">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="login/">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container ajuste">
+            <form name="form_postagens" method="post" action="https://www.espacodosautores.pt/"><!--me´todos de post e get-->
+                    <br>
+                    <legend>Publique suas obras 📚</legend>
+                    <p>
+                        <label>Qual gênero você quer publicar</label><!--Rotulo das opções-->
+                        <select class="pointer" name="Gênero" id="Gênero">
+                            <option value="Nenhum">Nenhum</option>
+                            <option value="Charge">Charge</option>
+                            <option value="Gibi">Gibi</option>
+                            <option value="HQ">HQ</option>
+                            <option value="Livro">Livro</option>
+                            <option value="Light Novels">Light Novels</option>
+                            <option value="Mangá">Mangá</option>
+                            <option value="Novels">Novels</option>
+                            <option value="Poema">Poema</option>
+                            <option value="WebToon">WebToon</option>
+                       </select>
+                    </p>
+                
+                <p>
+                <label>Arquivo</label>
+                <input type="file" name="myfile" id="myfile" placeholder="Insira o arquivo" required autofocus> 
+                </p>
+                
+                <p>
+                <label>Nome da obra</label>
+                <input type="text" name="nome" id="nome" size="30" placeholder="Insira nome da sua obra" required autofocus maxlength="50"></p>
+
+                <p>
+                <label>Descrição da obra</label><br>
+                <textarea class="rize" rows="10" cols="50" type="text" name="text" id="texto" size="30" placeholder="Insira descrição da sua obra" required maxlength="500"></textarea>
+                </p>
+
+                <p>
+                <label>Data de postagem</label>
+                <input class="pointer" type="date" name="data" id="date" size="30"
+                required autofocus>
+                </p>
+
+                <input class="btn btn-primary" type="submit" name="enviar" id="enviar" size="30" required autofocus>
+                <input class="btn btn-primary" type="reset" name="cancelar" id="reset" size="30" required autofocus>
+            </section>
+
+    <!-- JavaScript bootstrap file -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+   </body>
+   </html>
